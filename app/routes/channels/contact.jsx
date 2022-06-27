@@ -1,0 +1,1 @@
+export default () => <h2>I am contact page</h2>
