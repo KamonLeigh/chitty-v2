@@ -6,7 +6,8 @@ import {
   Scripts,
   ScrollRestoration,
   useLoaderData,
-  useFetcher
+  useFetcher,
+  useCatch
 } from "@remix-run/react";
 
 import { useEffect } from 'react';
@@ -76,3 +77,7 @@ export default function App() {
     </html>
   );
 }
+
+
+
+

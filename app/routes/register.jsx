@@ -14,6 +14,10 @@ export default function () {
             password
         })
 
+        if (error) {
+            console.log(error.message);
+          }
+
     }
     return (
         <div className="h-screen flex flex-col items-center justify-center bg-gray-800 text-white">

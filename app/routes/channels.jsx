@@ -20,6 +20,9 @@ export default () => {
 
     return (<div className="h-screen flex">
        <div className="bg-gray-800 text-white w-40 p-8">
+       <Link className="mb-8 text-slate-200" to="/channels/add">
+           Add
+       </Link>
         {channels.map(channel => (
         <p key={channel.id}>
             <Link to={`/channels/${channel.id}`} >

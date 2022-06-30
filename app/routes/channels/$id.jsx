@@ -1,5 +1,6 @@
 import { useLoaderData, Form, useFetcher, useTransition} from "@remix-run/react";
 import { useEffect, useState, useRef } from "react";
+import { json } from "@remix-run/node";
 import withAuthRequired from '~/util/withAuthRequired';
 import supabase from "~/util/supabase";
 
@@ -14,9 +15,10 @@ export const loader = async ({ request, params: { id } }) => {
         .match({ id })
         .order('created_at', { foreignTable: 'messages'})
         .single();
-    
+        
     if (error) {
-        console.log(error.message)
+
+       console.log(error);
     }
     return { channel, user }
 
@@ -123,4 +125,4 @@ export default ({ params }) => {
             </Form>
         </>
         )
-}//border border-gray-200 px-2 flex-1
+}
