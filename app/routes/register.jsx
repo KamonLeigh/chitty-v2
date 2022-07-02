@@ -38,7 +38,7 @@ export default function () {
                     />
                <button className="bg-gray-700 py-2">Go!</button>
            </form>
-           <p>Already have an account? 
+           <p>Already have an account? 👉
                 <Link to="/login">Login</Link> 
             </p>
         </div>

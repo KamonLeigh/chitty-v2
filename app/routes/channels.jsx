@@ -20,6 +20,12 @@ export default () => {
 
     return (<div className="h-screen flex">
        <div className="bg-gray-800 text-white w-40 p-8">
+       <button className="mb-4 ">
+        <Link className="bg-gray-700 py-2 px-2" type="button" to="/logout" aria-label="log out button">
+                Logout
+        </Link>
+       </button>
+       <br/>
        <Link className="mb-8 text-slate-200" to="/channels/add">
            Add
        </Link>

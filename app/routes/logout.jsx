@@ -17,5 +17,9 @@ const fetcher = useFetcher();
 
         logout()
     },[])
-    return  <p>Logging out</p>
+    return ( <div className="h-screen flex flex-col items-center justify-center bg-gray-800 text-white">
+                <p>Logging out..... thank you ❤️</p>
+            </div>
+                 
+            )
 }

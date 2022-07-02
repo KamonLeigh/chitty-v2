@@ -36,7 +36,7 @@ export default function () {
                     />
                <button className="bg-gray-700 py-2">Go!</button>
            </form>
-           <p>Don't have an account? 
+           <p>Don't have an account? 👉
                 <Link to="/register"> Register</Link> 
             </p>
         </div>
